@@ -58,9 +58,15 @@ def main():
     game_over = False
     while not game_over:
         cenario_atual = cenarios[nome_cenario_atual]
-
-        # Aluno A: substitua este comentário pelo código para imprimir 
-        # o cenário atual.
+        
+        
+        print(cenario_atual['titulo'])
+        print('-'*len(cenario_atual['titulo']))
+        print(cenario_atual['descricao'])
+        print('Suas Opções, escolha com cautela: ')
+        for i in cenario_atual['opcoes']:
+            print(i,':',cenario_atual['opcoes'][i])
+            print('')
 
         opcoes = cenario_atual['opcoes']
         if len(opcoes) == 0:
